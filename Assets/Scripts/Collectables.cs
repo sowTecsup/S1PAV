@@ -28,7 +28,7 @@ public class Collectables : MonoBehaviour
             }
 
 
-
+            print("Jugador Interactuo con la moneda");
             Destroy(gameObject);
         }
     }
