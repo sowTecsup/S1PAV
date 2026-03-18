@@ -29,6 +29,13 @@ public class Player : MonoBehaviour
     private void OnMovement(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<Vector2>();
+
+        MovementMechanism(moveInput);
+    }
+
+    private void MovementMechanism(Vector2 input)
+    {
+        transform.position +=  (Vector3)input * speed *Time.deltaTime;    
     }
 
     void Start()
@@ -39,9 +46,6 @@ public class Player : MonoBehaviour
    
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            print("space");
-        }
+       
     }
 }
