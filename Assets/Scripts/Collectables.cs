@@ -20,7 +20,15 @@ public class Collectables : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            collision.gameObject.GetComponent<Player>().score += value;
+
+
+            if (collision.gameObject.GetComponent<Player>() != null)
+            {
+                collision.gameObject.GetComponent<Player>().score += value;
+            }
+
+
+
             Destroy(gameObject);
         }
     }
