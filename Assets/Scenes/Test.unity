@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8e925c5b04d8784ba41b12757eab0d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Collectables
-  value: 1
+  value: 10
   timeToDespawn: 0
 --- !u!212 &647341144
 SpriteRenderer:
@@ -456,9 +456,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1138447472}
   - component: {fileID: 1138447471}
-  - component: {fileID: 1138447470}
-  - component: {fileID: 1138447473}
   - component: {fileID: 1138447474}
+  - component: {fileID: 1138447473}
+  - component: {fileID: 1138447470}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
